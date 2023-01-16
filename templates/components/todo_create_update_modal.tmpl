@@ -1,0 +1,34 @@
+{{define "components/todo_create_update_modal.tmpl"}}
+    <div id="todo_create_update_modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" onclick="resetInput()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input id="title_input" type="text" name="title" class="form-control" placeholder="What do you want to do?">
+                        <label for="title_input">Title</label>
+                        <div class="form-text">Enter what you want to procrastinate</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                                title="Cancel"
+                                onclick="resetInput()">
+                            Cancel
+                        </button>
+                        <button id="request_to_server_btn_create_update"
+                                type="button"
+                                class="btn btn-primary"
+                                title="Submit">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{end}}

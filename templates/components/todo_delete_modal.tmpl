@@ -1,0 +1,19 @@
+{{define "components/todo_delete_modal.tmpl"}}
+    <div id="todo_delete_modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Delete task</h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure to delete this task?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" title="Cancel">Cancel</button>
+                    <button id="request_to_server_btn_delete" type="button" class="btn btn-danger" title="Delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{{end}}

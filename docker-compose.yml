@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  todoapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '80:8000'

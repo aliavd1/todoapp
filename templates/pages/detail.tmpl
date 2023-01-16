@@ -1,0 +1,8 @@
+{{define "pages/detail.tmpl"}}
+    {{template "components/main_header.tmpl"}}
+    <div class="m-auto w-75">
+        <h2 class="text-center mt-3">Todo</h2>
+        {{template "components/todo_one.tmpl" .todo}}
+    </div>
+    {{template "components/main_footer.tmpl"}}
+{{end}}
