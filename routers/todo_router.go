@@ -10,7 +10,7 @@ func TodoRouter(r *gin.RouterGroup) {
 
 	r.GET("/", todoHandler.FindAll())
 
-	r.GET("/:id", todoHandler.FindOne())
+	//r.GET("/:id", todoHandler.FindOne())
 
 	r.POST("/", todoHandler.Create())
 

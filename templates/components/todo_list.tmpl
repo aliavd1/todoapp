@@ -22,7 +22,7 @@
                 <tbody>
                     {{range .}}
                         <tr id="record_{{.ID}}">
-                            <td><a href="{{.Url}}">{{.Title}}</a></td>
+                            <td>{{.Title}}</td>
                             <td>{{.CreatedAt | dateFormat}}</td>
                             <td>{{.UpdatedAt | dateFormat}}</td>
                             <td>

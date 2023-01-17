@@ -20,11 +20,9 @@ function deleteTask(itemID) {
 }
 
 async function requestToServerCreateUpdate(itemID, method) {
-    let debugUrl = 'http://localhost:8000/todos/' + itemID
-    let releaseUrl = 'http://localhost/todos/' + itemID
+    let url = window.location.href + itemID
     let title = document.querySelector("#title_input").value
     if (title) {
-        let url = releaseUrl
         let data = {
             "title": title,
         }
@@ -48,9 +46,7 @@ async function requestToServerCreateUpdate(itemID, method) {
 }
 
 async function requestToServerDelete(itemID) {
-    let debugUrl = 'http://localhost:8000/todos/' + itemID
-    let releaseUrl = 'http://localhost/todos/' + itemID
-    let url = releaseUrl
+    let url = window.location.href + itemID
     let header = {
         "Accept": "application/json",
         "Content-Type": "application/json",
